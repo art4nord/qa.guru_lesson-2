@@ -50,13 +50,13 @@ public class StudentRegistrationFormTest {
         $("#genterWrapper").$(byText(varGender)).click();
         $("#userNumber").val(varUserNumber);
 
-//      "Set Date"
+//  "Set Date"
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").selectOption(varBirthMonth);
         $(".react-datepicker__year-select").selectOption(varBirthYear);
         $(".react-datepicker__day--0" + varBirthDay).click();
 
-//      "Set Subject"
+//  "Set Subject"
         $("#subjectsInput").val(varSubject1Prefix);
         $(".subjects-auto-complete__menu-list").$(byText(varSubject1Full)).click();
         $("#subjectsInput").val(varSubject2Prefix);
@@ -70,7 +70,7 @@ public class StudentRegistrationFormTest {
         $("#uploadPicture").uploadFile(new File("src/test/resources/" + varPicture));
         $("#currentAddress").val(varCurrentAddress);
 
-        $x("//div[@id='state']").click();
+        $x("//div[@id='state']").scrollTo().click();
         $("#stateCity-wrapper").$(byText(varState)).click();
         $x("//div[@id='city']").click();
         $("#stateCity-wrapper").$(byText(varCity)).click();
