@@ -46,7 +46,7 @@ public class StudentRegistrationFormTest {
 
         $("#firstName").val(varFirstName);
         $("#lastName").val(varLastName);
-        $("#userEmail").val(varUserEmail);
+   //     $("#userEmail").val(varUserEmail);
         $("#genterWrapper").$(byText(varGender)).click();
         $("#userNumber").val(varUserNumber);
 
@@ -63,7 +63,7 @@ public class StudentRegistrationFormTest {
         $(".subjects-auto-complete__menu-list").$(byText(varSubject2Full)).click();
         $("#subjectsInput").val(varSubject3Prefix);
         $(".subjects-auto-complete__menu-list").$(byText(varSubject3Full)).click();
-
+$("#userEmail").val(varUserEmail);
         $("#hobbiesWrapper").$(byText(varHobby1)).click();
         $("#hobbiesWrapper").$(byText(varHobby2)).click();
 
